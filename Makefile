@@ -9,3 +9,6 @@ install-dev: requirements-dev.txt
 
 run:
 	@python manage.py run
+
+test:
+	@python -m pytest
