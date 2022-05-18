@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""This module tests the home route."""
+"""This module tests the index route."""
 
 
 def test_index(client):
