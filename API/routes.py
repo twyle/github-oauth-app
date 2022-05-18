@@ -4,6 +4,7 @@
 from flask import render_template, request
 
 from API import app
+from API.helpers import get_access_token, get_user_data
 
 
 @app.route('/index', methods=['GET'])
@@ -29,15 +30,18 @@ def index() -> dict:
 @app.route('/home', methods=['GET'])
 def home() -> str:
     """Provide the user with the option to register with GitHub."""
-    return render_template('index.html', client_id=app.config['CLIENT_ID']), 200
+    return render_template('home.html', client_id=app.config['CLIENT_ID']), 200
 
 
 @app.route('/github/callback', methods=['GET'])
 def github_callback():
-    """Authenticate the user."""
-    # get_request_token()
-    # get_access_token()
-    # get_user_data()
+    """Authenticate the user and sisplays their data."""
     args = request.args
     request_token = args.get('code')
-    return request_token
+
+    CLIENT_ID = app.config['CLIENT_ID']
+    CLIENT_SECRET = app.config['CLIENT_SECRET']
+    access_token = get_access_token(CLIENT_ID, CLIENT_SECRET, request_token)
+
+    user_data = get_user_data(access_token)
+    return render_template('success.html', userData=user_data)
