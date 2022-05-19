@@ -35,7 +35,7 @@ def home() -> str:
 
 @app.route('/github/callback', methods=['GET'])
 def github_callback():
-    """Authenticate the user and sisplays their data."""
+    """Authenticate the user and displays their data."""
     args = request.args
     request_token = args.get('code')
 
@@ -44,4 +44,4 @@ def github_callback():
     access_token = get_access_token(CLIENT_ID, CLIENT_SECRET, request_token)
 
     user_data = get_user_data(access_token)
-    return render_template('success.html', userData=user_data)
+    return render_template('dashboard.html', userData=user_data)
