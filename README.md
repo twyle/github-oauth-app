@@ -19,7 +19,7 @@
 ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
-This application allows a user to authenticate themselves using their GitHub credentials.
+This application allows a user to authenticate themselves using their GitHub credentials. You can read more about it, including how it was developed over at ![medium]().
 
 ![](header.png)
 
@@ -79,17 +79,17 @@ make run
 
 ## Usage example
 
-After the application is run, click on the GitHub Login button:
+### After the application is run, click on the GitHub Login button:
 
 ![](header.png)
 
-The application will direct to a page that will request you to authorize the app:
+### The application will direct to a page that will request you to authorize the app:
 
-![](header.png)
+![](oauth-authorize.png)
 
-You will then be redirected to a dashboard that displays your information.
+### You will then be redirected to a dashboard that displays your information.
 
-![](header.png)
+![](oauth-dashboard.png)
 
 ## Development setup
 
