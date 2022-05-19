@@ -19,22 +19,22 @@
 ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
-This applivation allows a ser to authenticate themselves using their GitHub credentials.
+This application allows a user to authenticate themselves using their GitHub credentials.
 
 ![](header.png)
 
 ## Installation
 
-### Clone the [Flask API Template repo](https://github.com/twyle/api-template.git)
+### Clone the [GitHub OAuth Application repo](https://github.com/twyle/github-oauth-app.git)
 
 ```sh
-git clone https://github.com/twyle/api-template.git
+git clone https://github.com/twyle/github-oauth-app.git
 ```
 
 ### Navigate into the cloned repo
 
 ```sh
-cd api-template
+cd github-oauth-app
 ```
 
 ### Create a Python3 Virtual Environment.
@@ -79,9 +79,17 @@ make run
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+After the application is run, click on the GitHub Login button:
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+![](header.png)
+
+The application will direct to a page that will request you to authorize the app:
+
+![](header.png)
+
+You will then be redirected to a dashboard that displays your information.
+
+![](header.png)
 
 ## Development setup
 
@@ -129,8 +137,6 @@ make test
 - fixed the linting errors.
 - fixed isort.
 
-
-
 ## Meta
 
 Lyle Okoth – [@lylethedesigner](https://twitter.com/lylethedesigner) on twitter – [lyle okoth](https://medium.com/@lyle-okoth) on medium, and my email is lyceokoth@gmail.com
@@ -141,7 +147,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Contributing
 
-1. Fork it https://github.com/twyle/flask-react-blog-simple/fork
+1. Fork it https://github.com/twyle/github-oauth-app/fork
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
