@@ -19,7 +19,7 @@
 ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
-This application allows a user to authenticate themselves using their GitHub credentials. You can read more about it, including how it was developed over at [How To Authorize a User Using the GitHub OAuth API , Python and Flask](https://medium.com/@lyle-okoth/creating-a-pytest-github-action-that-shows-code-coverage-b0d11655b748).
+This application allows a user to authenticate themselves using their GitHub credentials. You can read more about it, including how it was developed over at [How To Authorize a User Using the GitHub OAuth API , Python and Flask](https://medium.com/@lyle-okoth/github-oauth-using-python-and-flask-d051c6fea395).
 
 ![](header.png)
 
