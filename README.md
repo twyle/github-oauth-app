@@ -71,6 +71,25 @@ venv\\Scripts\\Activate
 make install
 ```
 
+### Create the project secrets
+
+Navigate to [GitHub OAth API registration](https://github.com/settings/applications/new) and register a new application. At the commandline, create a .env file:
+
+```sh
+touch .env
+```
+Then add the following to the file:
+
+```sh
+-   FLASK_APP=API/__init__.py
+-   FLASK_ENV=development
+```
+Then copy the client id and client secret from the registered app and add them to the file also:
+```sh
+-   CLIENT_ID=xxxxxxxxxxxxxxxxxxx
+-   CLIENT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
 ### Run the application.
 
 ```sh
