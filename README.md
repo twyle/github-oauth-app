@@ -19,7 +19,7 @@
 ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
-This application allows a user to authenticate themselves using their GitHub credentials. You can read more about it, including how it was developed over at ![medium]().
+This application allows a user to authenticate themselves using their GitHub credentials. You can read more about it, including how it was developed over at ![medium](https://medium.com/@lyle-okoth/github-oauth-using-python-and-flask-d051c6fea395).
 
 ![](header.png)
 
@@ -165,8 +165,8 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [feature-development-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/feature-development-workflow.yml/badge.svg?branch=feature%2Fworkflows
 [feature-development-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/feature-development-workflow.yml
 
-[development-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/development-workflow.yml/badge.svg
-[development-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/development-workflow.yml
+[development-image]: https://github.com/twyle/github-oauth-app/actions/workflows/development-workflow.yml/badge.svg
+[development-url]: https://github.com/twyle/github-oauth-app/actions/workflows/development-workflow.yml
 
 [staging-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/staging-workflow.yml/badge.svg
 [staging-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/staging-workflow.yml

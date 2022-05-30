@@ -38,6 +38,7 @@ def github_callback():
     """Authenticate the user and displays their data."""
     args = request.args
     request_token = args.get('code')
+    print(f'The request token {request_token}')
 
     CLIENT_ID = app.config['CLIENT_ID']
     CLIENT_SECRET = app.config['CLIENT_SECRET']

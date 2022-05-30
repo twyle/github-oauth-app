@@ -73,8 +73,9 @@ def get_access_token(CLIENT_ID: str, CLIENT_SECRET: str, request_token: str) -> 
     if not isinstance(request_token, str):
         raise ValueError('The request token has to be a string!')
 
-    url = f'https://github.com/login/oauth/access_token?client_id={CLIENT_ID}\
-    &client_secret={CLIENT_SECRET}&code={request_token}'
+    base_url = 'https://github.com/login/oauth/access_token?'
+    auth = f'client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&code={request_token}'
+    url = base_url + auth
     headers = {
         'accept': 'application/json'
     }
@@ -82,6 +83,7 @@ def get_access_token(CLIENT_ID: str, CLIENT_SECRET: str, request_token: str) -> 
     res = requests.post(url, headers=headers)
 
     data = res.json()
+    print(data)
     access_token = data['access_token']
 
     return access_token
