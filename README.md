@@ -98,7 +98,7 @@ make run
 
 ## Usage example
 
-### After the application is run, click on the GitHub Login button:
+### After the application is run, navigate to http://localhost:5000/home and click on the GitHub Login button:
 
 ![](header.png)
 
