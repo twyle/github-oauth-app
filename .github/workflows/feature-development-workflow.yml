@@ -31,4 +31,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        if [ -d tests ] || [ -d test ]; then FLASK_APP=${{secrets.FLASK_APP}} FLASK_ENV=${{secrets.FLASK_ENV}} python -m pytest; fi
+        if [ -d tests ] || [ -d test ]; then FLASK_APP=${{secrets.FLASK_APP}} FLASK_ENV=${{secrets.FLASK_ENV}} CLIENT_ID=xxxxx CLIENT_SECRET=xxxxxx python -m pytest; fi
