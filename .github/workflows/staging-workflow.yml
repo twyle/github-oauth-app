@@ -65,5 +65,5 @@ jobs:
         env:
           HD_FLASK_ENV: ${{secrets.FLASK_ENV}}
           HD_FLASK_APP: ${{secrets.FLASK_APP}}
-          HD_CLIENT_ID: ${{secrets.SECRET_ID}}
-          HD_CLIENT_KEY: ${{secrets.SECRET_KEY}}
+          HD_CLIENT_ID: ${{secrets.CLIENT_ID}}
+          HD_CLIENT_KEY: ${{secrets.CLIENT_KEY}}
