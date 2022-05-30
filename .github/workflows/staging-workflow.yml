@@ -60,10 +60,10 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "${{ env.APP_NAME }}-dev" #Must be unique in Heroku
+          heroku_app_name: "${{ env.APP_NAME }}-staging" #Must be unique in Heroku
           heroku_email: "${{ secrets.HEROKU_EMAIL }}"
         env:
           HD_FLASK_ENV: ${{secrets.FLASK_ENV}}
           HD_FLASK_APP: ${{secrets.FLASK_APP}}
-          HD_SECRET_ID: ${{secrets.SECRET_ID}}
-          HD_SECRET_KEY: ${{secrets.SECRET_KEY}}
+          HD_CLIENT_ID: ${{secrets.SECRET_ID}}
+          HD_CLIENT_KEY: ${{secrets.SECRET_KEY}}
