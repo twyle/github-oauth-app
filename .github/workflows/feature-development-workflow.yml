@@ -33,7 +33,7 @@ jobs:
       run: |
         touch .env
         echo FLASK_APP=${{secrets.FLASK_APP}} >> .env
-        echo FLASK_ENV=development >> .env
-        echo CLIENT_ID=zxddbehrjnkrkrk >> .env
-        echo CLIENT_SECRET=${{secrets.FLASK_APP}} >> .env
+        echo FLASK_ENV=${{secrets.FLASK_ENV}} >> .env
+        echo CLIENT_ID=${{secrets.CLIENT_ID}} >> .env
+        echo CLIENT_SECRET=${{secrets.CLIENT_SECRET}} >> .env
         if [ -d tests ] || [ -d test ]; then python -m pytest; fi
