@@ -51,7 +51,7 @@ jobs:
     needs: [Build]
     runs-on: ubuntu-latest
     environment:
-      name: Development
+      name: Staging
       url: 'https://${{env.APP_NAME}}-staging.herokuapp.com/'
     steps:
       - name: Deploy
