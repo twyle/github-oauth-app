@@ -32,7 +32,3 @@ jobs:
         if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
 
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Test with pytest
-      run: |
-        if [ -d tests ] || [ -d test ]; then FLASK_APP=${{secrets.FLASK_APP}} FLASK_ENV=${{secrets.FLASK_ENV}} python -m pytest; fi
