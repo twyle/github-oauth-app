@@ -13,6 +13,9 @@ jobs:
     strategy:
       matrix:
         python-version: [3.7, 3.8, 3.9]
+    env:
+      CLIENT_ID: dummy-id
+      CLIENT_SECRET: dummy-secret
 
     steps:
     - name: Check out code
@@ -31,4 +34,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        if [ -d tests ] || [ -d test ]; then FLASK_APP=${{secrets.FLASK_APP}} FLASK_ENV=${{secrets.FLASK_ENV}} CLIENT_ID=xxxxx CLIENT_SECRET=xxxxxx python -m pytest; fi
+        if [ -d tests ] || [ -d test ]; then FLASK_APP=${{secrets.FLASK_APP}} FLASK_ENV=${{secrets.FLASK_ENV}} python -m pytest; fi
