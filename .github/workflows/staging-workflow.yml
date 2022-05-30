@@ -46,7 +46,7 @@ jobs:
         if [ -d tests ] || [ -d test ]; then python -m pytest; fi
 
   DeployStaging:
-    name: Deploy to Dev
+    name: Deploy to Staging
 
     needs: [Build]
     runs-on: ubuntu-latest
