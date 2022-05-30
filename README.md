@@ -165,8 +165,8 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [feature-development-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/feature-development-workflow.yml/badge.svg?branch=feature%2Fworkflows
 [feature-development-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/feature-development-workflow.yml
 
-[development-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/development-workflow.yml/badge.svg
-[development-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/development-workflow.yml
+[development-image]: https://github.com/twyle/github-oauth-app/actions/workflows/development-workflow.yml/badge.svg
+[development-url]: https://github.com/twyle/github-oauth-app/actions/workflows/development-workflow.yml
 
 [staging-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/staging-workflow.yml/badge.svg
 [staging-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/staging-workflow.yml
