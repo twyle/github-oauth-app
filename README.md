@@ -192,4 +192,3 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [production-image]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/production-workflow.yml/badge.svg
 [production-url]: https://github.com/twyle/flask-react-blog-simple/actions/workflows/production-workflow.yml
-aa
