@@ -34,6 +34,6 @@ jobs:
         touch .env
         echo FLASK_APP=API/__init__.py >> .env
         echo FLASK_ENV=development >> .env
-        echo CLIENT_ID=zxddbehrjnkrkrk
-        echo CLIENT_SECRET=shfjfueiijwhwkihhddjjdd
+        echo CLIENT_ID=zxddbehrjnkrkrk >> .env
+        echo CLIENT_SECRET=shfjfueiijwhwkihhddjjdd >> .env
         if [ -d tests ] || [ -d test ]; then python -m pytest; fi
